@@ -1,8 +1,20 @@
+
 body {
     background-color: #c7ecee;
-    font-family: 'Open Sans', sans-serif;
-    margin: 0;
+    margin: auto;
+    font-family: 'Akaya Kanadaka', cursive;
 }
+
+.container {
+  max-width: 80%;
+  margin: auto;
+  border-radius: 5%;
+  background-color: #60a3bc;
+  overflow: visible;
+  display:flex;
+  flex-direction: column;
+}
+
 
 /* Hide the images by default */
 .mySlides {
@@ -11,23 +23,12 @@ body {
 /* Slideshow container */
 .slideshow-container {
   position: relative;
-  margin: auto;
-  max-width: 1600px;
+  max-width: 1530px;
 }
 img {
-  vertical-align: middle;
-  height:600px;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+  height:500px;
+  border: solid #ffbe76;
+  border-radius: 10px;
 }
 
 /* Caption text */
@@ -41,21 +42,12 @@ img {
   text-align: center;
 }
 
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
 /* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
   height: 15px;
   width: 15px;
-  margin: 0 2px;
+  margin: 8px 3px;
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
@@ -89,20 +81,12 @@ img {
   .prev, .next,.text {font-size: 11px}
 }
 
-  .container {
-    max-width: 70%;
-    margin: 30px auto;
-    border-radius: 5%;
-    background-color: #60a3bc;
-    padding: 10px;
-    overflow: visible;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  
+
+  /* Navigation */
+
   .nav {
     text-align: center;
-    margin-top: 15px;
+    margin-top: 20px;
   }
   
   a {
@@ -116,17 +100,21 @@ img {
   a:hover {
     color:darksalmon;
   }
-  h1 {
-    color: #dff9fb;
-    text-align: center;
+
+
+
+  /* Gallery */
+  .row, .row1{
+    display: flex;
+  }
+  
+  .column {
+    flex: 33.33%;
+    padding: 8px;
+    margin-top:15px
   }
 
-
-
-
-
-
-
+  /* Footer */
 
 
   .footer {
