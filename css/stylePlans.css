@@ -6,7 +6,7 @@ body {
 }
 
 .container {
-  max-width: 80%;
+  max-width: 70%;
   margin: auto;
   border-radius: 5%;
   background-color: #60a3bc;
@@ -15,7 +15,6 @@ body {
   flex-direction: column;
 }
 
-
 /* Hide the images by default */
 .mySlides {
   display: none;
@@ -23,7 +22,7 @@ body {
 /* Slideshow container */
 .slideshow-container {
   position: relative;
-  max-width: 1530px;
+  max-width: 1515px;
 }
 img {
   height:500px;
@@ -101,10 +100,12 @@ img {
     color:darksalmon;
   }
 
-
-
   /* Gallery */
-  .row, .row1{
+  .gallery-container{
+    margin:auto;
+    padding:20px;
+  }
+  .row, .row1 {
     display: flex;
   }
   
@@ -112,11 +113,15 @@ img {
     flex: 33.33%;
     padding: 8px;
     margin-top:15px
+    
+  }
+  .content {
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
   }
 
   /* Footer */
-
-
   .footer {
     background: darksalmon;
     color: #575fcf;
