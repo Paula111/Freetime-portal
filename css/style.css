@@ -7,7 +7,6 @@ body {
 .splash {
   background: url("https://images.pexels.com/photos/136412/pexels-photo-136412.jpeg") 0/cover no-repeat;
   min-height: 500px;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -59,7 +58,6 @@ body {
   background-color: #60a3bc;
   padding: 10px;
   overflow: visible;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -86,24 +84,17 @@ h1 {
 }
 
 .wrapper {
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .box2 {
   min-height: 300px;
-  -ms-flex: 0 0 50%;
-      flex: 0 0 50%;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  display: -ms-flexbox;
+  flex: 0 0 50%; 
+  flex-wrap: wrap;
   display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
+  justify-content: center;
   margin-bottom: 60px;
 }
 
@@ -142,8 +133,7 @@ h1 {
 img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .footer {

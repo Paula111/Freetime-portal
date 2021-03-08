@@ -5,7 +5,7 @@ body {
     margin: auto;
 }
 
-.container {
+.intro-container {
     display: flex;
     height: 500px;
     margin: auto;
@@ -78,8 +78,58 @@ body {
   a:hover {
     color: darksalmon;
   }
-  
 
+  .container {
+    max-width: 70%;
+    margin: 30px auto;
+    border-radius: 5%;
+    background-color: #60a3bc;
+    padding: 10px;
+    overflow: visible;
+    display: flex;
+  }
+
+  .wrapper {
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .box2 {
+    min-height: 300px;
+    flex: 0 0 50%;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+  }
+  
+  .description {
+    width: 50%;
+    padding: 5px;
+  }
+
+  h2 {
+    font-size: 19px;
+    text-align: center;
+  }
+  
+  .image {
+    border: 3px solid #ddd;
+    margin-top: 10px;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 50%;
+    height: auto;
+    position: relative;
+  }
+
+  img {
+    width: 40%;
+    height: 80%;
+    object-fit: cover;
+  }
 
 .footer {
     background: darksalmon;
