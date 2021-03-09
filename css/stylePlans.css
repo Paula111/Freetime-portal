@@ -87,6 +87,11 @@ img {
     text-align: center;
     margin-top: 20px;
   }
+
+  .nav-container{
+    background-color: darksalmon;
+    padding:10px;
+  }
   
   a {
     padding: 20px;
@@ -97,7 +102,7 @@ img {
   }
   
   a:hover {
-    color:darksalmon;
+    color:midnightblue;
   }
 
   /* Gallery */

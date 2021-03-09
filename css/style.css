@@ -52,10 +52,10 @@ body {
 }
 
 .container {
-  max-width: 70%;
+  max-width: 80%;
   margin: 30px auto;
   border-radius: 5%;
-  background-color: #60a3bc;
+  background-color:inherit;
   padding: 10px;
   overflow: visible;
   display: flex;
@@ -64,6 +64,11 @@ body {
 .nav {
   text-align: center;
   margin-top: 15px;
+}
+
+.nav-container{
+  background-color: darksalmon;
+  padding:10px;
 }
 
 a {
@@ -75,7 +80,7 @@ a {
 }
 
 a:hover {
-  color: darksalmon;
+  color:midnightblue;
 }
 
 h1 {
@@ -91,7 +96,7 @@ h1 {
 
 .box2 {
   min-height: 300px;
-  flex: 0 0 50%; 
+  flex: 0 0 50%;
   flex-wrap: wrap;
   display: flex;
   justify-content: center;
@@ -104,7 +109,7 @@ h1 {
 }
 
 .image {
-  border: 3px solid #ddd;
+  border: 3px solid darksalmon;
   margin-top: 10px;
   border-radius: 10px;
   padding: 20px;

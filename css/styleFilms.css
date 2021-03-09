@@ -66,6 +66,11 @@ body {
     text-align: center;
     margin-top: 20px;
   }
+
+  .nav-container{
+    background-color: darksalmon;
+    padding:10px;
+  }
   
   a {
     padding: 20px;
@@ -76,38 +81,29 @@ body {
   }
   
   a:hover {
-    color: darksalmon;
+    color: midnightblue;
   }
 
   .container {
-    max-width: 70%;
-    margin: 30px auto;
-    border-radius: 5%;
-    background-color: #60a3bc;
-    padding: 10px;
-    overflow: visible;
-    display: flex;
+    max-width: 100%;
+    margin: 20px;
+    background-color:inherit;
   }
-
   .wrapper {
-    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    padding: 20px;
   }
   
-  .box2 {
+  .box1 {
     min-height: 300px;
-    flex: 0 0 50%;
-    flex-wrap: wrap;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 60px;
+    flex: 33.33%;
+    padding: 10px;
   }
   
   .description {
-    width: 50%;
-    padding: 5px;
+    width: 90%;
+    text-align: center;
+    padding: 20px;
   }
 
   h2 {
@@ -117,18 +113,22 @@ body {
   
   .image {
     border: 3px solid #ddd;
-    margin-top: 10px;
+    margin: auto;
     border-radius: 10px;
-    padding: 20px;
+    padding: 10px;
     max-width: 50%;
     height: auto;
     position: relative;
   }
 
   img {
-    width: 40%;
+    padding: 20px;
+    margin: auto;
+    display: flex;
+    width: 80%;
     height: 80%;
     object-fit: cover;
+    border: 3px solid darksalmon;
   }
 
 .footer {
