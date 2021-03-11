@@ -1,5 +1,5 @@
 body {
-  background-color: #c7ecee;
+  background-color: #60a3bc;
   font-family: 'Akaya Kanadaka', cursive;
   margin: 0;
 }
@@ -34,27 +34,56 @@ body {
 }
 
 .container {
-  max-width: 1000px;
+  max-width: 100%;
   margin: auto;
   background-color: #60a3bc;
-  padding: 10px;
   overflow: visible;
-  display: flex;
+  display:flex;
+  flex-direction: column;
 }
 
 /* Hide the images by default */
 .mySlides {
   display: none;
 }
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
 /* Slideshow container */
 .slideshow-container {
   position: relative;
-  max-width: 1000px;
-  margin: auto;
-}
+  max-width: 100%; 
+} 
+
 img {
-  height:500px;
+  height:100px;
 }
+
 
 /* Caption text */
 .text {
@@ -73,7 +102,7 @@ img {
   height: 15px;
   width: 15px;
   margin: 8px 3px;
-  background-color: #bbb;
+  background-color:darksalmon;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
@@ -103,8 +132,14 @@ img {
 
 .nav {
   text-align: center;
-  margin-top: 15px;
+  margin-top: 20px;
 }
+
+.nav-container{
+  background-color: darksalmon;
+  padding:10px;
+}
+
 
 a {
   padding: 20px;
@@ -124,24 +159,17 @@ h1 {
 }
 
 .wrapper {
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .box2 {
   min-height: 300px;
-  -ms-flex: 0 0 50%;
-      flex: 0 0 50%;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  display: -ms-flexbox;
+  flex: 0 0 50%;
+  flex-wrap: wrap;
   display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
+  justify-content: center;
   margin-bottom: 60px;
 }
 
@@ -152,7 +180,7 @@ h1 {
 
 .image {
   border: 3px solid #ddd;
-  margin-top: 10px;
+  margin-top: 30px;
   border-radius: 10px;
   padding: 20px;
   max-width: 50%;
@@ -180,8 +208,7 @@ h1 {
 img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .footer {
