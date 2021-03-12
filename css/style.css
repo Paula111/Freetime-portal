@@ -1,26 +1,7 @@
 body {
-  background-color: #c7ecee;
+  background-color: #60a3bc;
   font-family: 'Akaya Kanadaka', cursive;
   margin: 0;
-}
-
-.splash {
-  background: url("https://images.pexels.com/photos/136412/pexels-photo-136412.jpeg") 0/cover no-repeat;
-  min-height: 500px;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.splash-inner {
-  margin: auto;
-  max-width: 70%;
-}
-
-.page-title {
-  margin: 0;
-  font-size: 60px;
-  word-spacing: 2px;
-  font-weight: 700;
 }
 
 .btn {
@@ -53,19 +34,113 @@ body {
 }
 
 .container {
-  max-width: 70%;
-  margin: 30px auto;
-  border-radius: 5%;
+  max-width: 100%;
+  margin: auto;
   background-color: #60a3bc;
-  padding: 10px;
   overflow: visible;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  max-width: 100%;
+}
+
+img {
+  height: 100px;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 8px 3px;
+  background-color: darksalmon;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: .4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .nav {
   text-align: center;
-  margin-top: 15px;
+  margin-top: 20px;
+}
+
+.nav-container {
+  background-color: darksalmon;
+  padding: 10px;
 }
 
 a {
@@ -114,7 +189,7 @@ h1 {
 
 .image {
   border: 3px solid #ddd;
-  margin-top: 10px;
+  margin-top: 30px;
   border-radius: 10px;
   padding: 20px;
   max-width: 50%;
@@ -152,7 +227,6 @@ img {
   text-align: center;
 }
 
-/*# games */
 .g1 {
   display: inline-block;
   margin: 90%;
