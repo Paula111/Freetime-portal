@@ -81,9 +81,8 @@ body {
 } 
 
 img {
-  height:10px;
+  height:650px;
 }
-
 
 /* Caption text */
 .text {
@@ -170,7 +169,7 @@ h1 {
   flex-wrap: wrap;
   display: flex;
   justify-content: center;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
 }
 
 .description {
@@ -183,8 +182,7 @@ h1 {
   margin-top: 30px;
   border-radius: 10px;
   padding: 20px;
-  max-width: 50%;
-  height: auto;
+  width: 50%;
   position: relative;
 }
 
@@ -203,6 +201,12 @@ h1 {
 .image:hover::after {
   left: 11px;
   top: 11px;
+}
+
+.photo{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .footer {

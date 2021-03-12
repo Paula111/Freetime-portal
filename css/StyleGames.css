@@ -67,6 +67,11 @@ body {
   margin-top: 15px;
 }
 
+.nav-container {
+  background-color: darksalmon;
+  padding: 10px;
+}
+
 a {
   padding: 20px;
   font-weight: bold;
