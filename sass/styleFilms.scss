@@ -1,3 +1,4 @@
+
 body {
   background-color: #60a3bc;
   font-family: 'Akaya Kanadaka', cursive;
@@ -19,7 +20,7 @@ body {
   height: 100%;
   overflow: hidden;
   background-size: cover;
-  background-position: center;
+  background-position:center;
   transition: flex .4s ease;
   position: relative;
   border: 3px solid #ffbe76;
@@ -36,6 +37,7 @@ body {
 
 .content {
   color: #c7ecee;
+
 }
 
 .section .content {
@@ -51,11 +53,13 @@ body {
 }
 
 #movies {
-  background-image: url(https://www.hdwallpapersfreedownload.com/uploads/large/super-heroes/spiderman-hd-image-wallpaper-free.jpg);
+  background-image: 
+  url(https://www.hdwallpapersfreedownload.com/uploads/large/super-heroes/spiderman-hd-image-wallpaper-free.jpg);
 }
 
 #series {
-  background-image: url(https://images.pexels.com/photos/5082567/pexels-photo-5082567.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  background-image: 
+  url(https://images.pexels.com/photos/5082567/pexels-photo-5082567.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
 }
 
 .nav {
@@ -63,9 +67,9 @@ body {
   margin-top: 20px;
 }
 
-.nav-container {
+.nav-container{
   background-color: darksalmon;
-  padding: 10px;
+  padding:10px;
 }
 
 a {
@@ -83,9 +87,8 @@ a:hover {
 .container {
   max-width: 100%;
   margin: 20px;
-  background-color: inherit;
+  background-color:inherit;
 }
-
 .wrapper {
   display: flex;
   padding: 20px;
@@ -133,5 +136,3 @@ img {
   color: #575fcf;
   text-align: center;
 }
-
-/*# sourceMappingURL=styleFilms.css.map */

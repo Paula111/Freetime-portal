@@ -1,140 +1,221 @@
 body {
-    background-color: #c7ecee;
-    font-family: 'Akaya Kanadaka', cursive;
-    margin: 0;
-  }
-  .splash {
-    background: url("https://images.pexels.com/photos/136412/pexels-photo-136412.jpeg") 0/cover no-repeat;
-    min-height: 500px;
-    display:flex;
-  }
-  .splash-inner{
-      margin: auto;
-      max-width: 70%;
-  }
-  .page-title{
-      margin: 0;
-      font-size: 60px;
-      word-spacing: 2px;
-      font-weight: 700;
-  }
-  .btn{
-        display:inline-block;
-        min-width: 160px;
-        margin: 24px auto 0 auto;
-        padding: 16px;
-        border-radius: 5px;
-        font-size: 16px;
-        text-align: center;
-        text-decoration: none;
-        cursor: pointer;
-        border-width: 2px;
-        border-style: solid;
-        background-color: #e17055;
-        background-position: 100% 0;
-        background-size: 300%;
-        transition: all 2s;
-  }
-  .btn-one {
-    border-color:darksalmon;
-    color: #130f40;
-    background-image: linear-gradient(90deg, #c7ecee  50%, transparent 50%);    
-}
-  .btn:hover {
-    background-position: 0 100%;
-    color:#fad390;
+  background-color: #60a3bc;
+  font-family: 'Akaya Kanadaka', cursive;
+  margin: 0;
 }
 
-  .container {
-    max-width: 70%;
-    margin: 30px auto;
-    border-radius: 5%;
-    background-color: #60a3bc;
-    padding: 10px;
-    overflow: visible;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  
-  .nav {
-    text-align: center;
-    margin-top: 15px;
-  }
-  
-  a {
-    padding: 20px;
-    font-weight: bold;
-    font-size: 25px;
-    display: inline;
-    text-decoration: dashed;
-  }
-  
-  a:hover {
-    color:darksalmon;
-  }
-  
-  h1 {
-    color: #dff9fb;
-    text-align: center;
-  }
-  .wrapper {
-    display: flex;
-    flex-direction:column;
-    justify-content: space-between;
+ .btn {
+  display: inline-block;
+  min-width: 160px;
+  margin: 24px auto 0 auto;
+  padding: 16px;
+  border-radius: 5px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border-width: 2px;
+  border-style: solid;
+  background-color: #e17055;
+  background-position: 100% 0;
+  background-size: 300%;
+  transition: all 2s;
 }
- .box2 {
-   min-height: 300px;
-   flex: 0 0 50%;
-   flex-wrap: wrap;
-   display: flex;
-   justify-content: center;
-   margin-bottom: 60px; 
- }
 
- .description {
-   width: 50%;
-   padding: 20px; 
- }
- 
- .image {
+.btn-one {
+  border-color: darksalmon;
+  color: #130f40;
+  background-image: linear-gradient(90deg, #c7ecee 50%, transparent 50%);
+}
+
+.btn:hover {
+  background-position: 0 100%;
+  color: #fad390;
+}
+
+.container {
+  max-width: 100%;
+  margin: auto;
+  background-color: #60a3bc;
+  overflow: visible;
+  display:flex;
+  flex-direction: column;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  max-width: 100%; 
+} 
+
+img {
+  height:100px;
+}
+
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 8px 3px;
+  background-color:darksalmon;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.nav {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.nav-container{
+  background-color: darksalmon;
+  padding:10px;
+}
+
+
+a {
+  padding: 20px;
+  font-weight: bold;
+  font-size: 25px;
+  display: inline;
+  text-decoration: dashed;
+}
+
+a:hover {
+  color: darksalmon;
+}
+
+h1 {
+  color: #dff9fb;
+  text-align: center;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.box2 {
+  min-height: 300px;
+  flex: 0 0 50%;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+
+.description {
+  width: 50%;
+  padding: 20px;
+}
+
+.image {
   border: 3px solid #ddd;
-  margin-top: 10px;
+  margin-top: 30px;
   border-radius: 10px;
   padding: 20px;
   max-width: 50%;
   height: auto;
-  position: relative; 
- }
- 
- .image::after {
-   position: absolute;
-   content: '';
-   background-color: #63cdda;
-   opacity: 0.2;
-   width: 100%;
-   height: 100%;
-   left: 0;
-   top: 0;
-   transition: all 1s; 
- }
- 
- .image:hover::after {
-   left: 11px;
-   top: 11px; 
- }
- 
- img {
-   width: 100%;
-   height: 100%;
-   object-fit: cover;
- }
- 
-  .footer {
-    background:darksalmon;
-    color: #575fcf;
-    text-align: center;
-  }
-  /*# games */
+  position: relative;
+}
+
+.image::after {
+  position: absolute;
+  content: '';
+  background-color: #63cdda;
+  opacity: 0.2;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  transition: all 1s;
+}
+
+.image:hover::after {
+  left: 11px;
+  top: 11px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.footer {
+  background: darksalmon;
+  color: #575fcf;
+  text-align: center;
+}
 
   .g1 {
     display: inline-block;

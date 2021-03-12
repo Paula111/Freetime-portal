@@ -4,7 +4,7 @@ body {
   margin: 0;
 }
 
- .btn {
+.btn {
   display: inline-block;
   min-width: 160px;
   margin: 24px auto 0 auto;
@@ -38,8 +38,10 @@ body {
   margin: auto;
   background-color: #60a3bc;
   overflow: visible;
-  display:flex;
-  flex-direction: column;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
 }
 
 /* Hide the images by default */
@@ -60,7 +62,10 @@ body {
   font-size: 30px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 /* Position the "next button" to the right */
@@ -71,19 +76,18 @@ body {
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* Slideshow container */
 .slideshow-container {
   position: relative;
-  max-width: 100%; 
-} 
-
-img {
-  height:100px;
+  max-width: 100%;
 }
 
+img {
+  height: 100px;
+}
 
 /* Caption text */
 .text {
@@ -102,7 +106,7 @@ img {
   height: 15px;
   width: 15px;
   margin: 8px 3px;
-  background-color:darksalmon;
+  background-color: darksalmon;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
@@ -120,14 +124,13 @@ img {
   animation-duration: 1.5s;
 }
 
-@-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
 @keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+  from {
+    opacity: .4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .nav {
@@ -135,11 +138,10 @@ img {
   margin-top: 20px;
 }
 
-.nav-container{
+.nav-container {
   background-color: darksalmon;
-  padding:10px;
+  padding: 10px;
 }
-
 
 a {
   padding: 20px;
@@ -159,17 +161,24 @@ h1 {
 }
 
 .wrapper {
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
 }
 
 .box2 {
   min-height: 300px;
-  flex: 0 0 50%;
-  flex-wrap: wrap;
+  -ms-flex: 0 0 50%;
+      flex: 0 0 50%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -ms-flex-pack: center;
+      justify-content: center;
   margin-bottom: 60px;
 }
 
@@ -208,7 +217,8 @@ h1 {
 img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .footer {
@@ -217,7 +227,6 @@ img {
   text-align: center;
 }
 
-/*# games */
 .g1 {
   display: inline-block;
   margin: 90%;

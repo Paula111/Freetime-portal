@@ -1,8 +1,7 @@
-
 body {
-    background-color: #60a3bc;
-    margin: auto;
-    font-family: 'Akaya Kanadaka', cursive;
+  background-color: #60a3bc;
+  margin: auto;
+  font-family: 'Akaya Kanadaka', cursive;
 }
 
 .container {
@@ -10,7 +9,7 @@ body {
   margin: auto;
   background-color: #60a3bc;
   overflow: visible;
-  display:flex;
+  display: flex;
   flex-direction: column;
 }
 
@@ -18,13 +17,15 @@ body {
 .mySlides {
   display: none;
 }
+
 /* Slideshow container */
 .slideshow-container {
   position: relative;
   max-width: 100%;
 }
+
 img {
-  height:600px;
+  height: 600px;
 }
 
 /* Caption text */
@@ -44,7 +45,7 @@ img {
   height: 15px;
   width: 15px;
   margin: 8px 3px;
-  background-color:darksalmon;
+  background-color: darksalmon;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
@@ -63,73 +64,83 @@ img {
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+  from {
+    opacity: .4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+  from {
+    opacity: .4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
-  /* Navigation */
+/* Navigation */
+.nav {
+  text-align: center;
+  margin-top: 20px;
+}
 
-  .nav {
-    text-align: center;
-    margin-top: 20px;
-  }
+.nav-container {
+  background-color: darksalmon;
+  padding: 10px;
+}
 
-  .nav-container{
-    background-color: darksalmon;
-    padding:10px;
-  }
-  
-  a {
-    padding: 20px;
-    font-weight: bold;
-    font-size: 25px;
-    display: inline;
-    text-decoration: dashed;
-  }
-  
-  a:hover {
-    color:midnightblue;
-  }
+a {
+  padding: 20px;
+  font-weight: bold;
+  font-size: 25px;
+  display: inline;
+  text-decoration: dashed;
+}
 
-  /* Gallery */
-  .gallery-container{
-    margin:auto;
-    padding:20px;
-  }
-  .row, .row1 {
-    display: flex;
-  }
-  
-  .column {
-    flex: 33.33%;
-    padding: 8px;
-    margin-top:15px
-    
-  }
-  .content {
-    background-color: white;
-    padding: 15px;
-    border-radius: 10px;
-  }
+a:hover {
+  color: midnightblue;
+}
 
-  .gallery {
-    margin:0;
-    width: 440px;
-    height: 330px;
-  }
+/* Gallery */
+.gallery-container {
+  margin: auto;
+  padding: 20px;
+}
 
-  .gallery:hover {
-    border-color:#575fcf;
-  }
+.row, .row1 {
+  display: flex;
+}
 
-  /* Footer */
-  .footer {
-    background: darksalmon;
-    color: #575fcf;
-    text-align: center;
-  }
+.column {
+  flex: 33.33%;
+  padding: 8px;
+  margin-top: 15px;
+}
+
+.content {
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.gallery {
+  margin: 0;
+  width: 440px;
+  height: 330px;
+}
+
+.gallery:hover {
+  border-color: #575fcf;
+}
+
+/* Footer */
+.footer {
+  background: darksalmon;
+  color: #575fcf;
+  text-align: center;
+}
+
+/*# sourceMappingURL=stylePlans.css.map */
