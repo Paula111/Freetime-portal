@@ -21,13 +21,14 @@ body {
 }
 /* Slideshow container */
 .slideshow-container {
-  position: relative;
+  position: absolute;
   max-width: 1515px;
 }
 img {
   height:500px;
   border: solid #ffbe76;
   border-radius: 10px;
+  position: relative;
 }
 
 /* Caption text */

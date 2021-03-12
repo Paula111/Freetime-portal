@@ -1,0 +1,185 @@
+body {
+    background-color: #c7ecee;
+    font-family: 'Akaya Kanadaka', cursive;
+    margin: 0;
+  }
+  .splash {
+    background: url("/image/Games-main.jpg") 0/cover no-repeat;
+    min-height: 500px;
+    display:flex;
+  }
+  .splash-inner{
+      margin: auto;
+      max-width: 70%;
+  }
+  .page-title{
+      margin: 0;
+      font-size: 60px;
+      word-spacing: 2px;
+      font-weight: 700;
+  }
+  .btn{
+        display:inline-block;
+        min-width: 160px;
+        margin: 24px auto 0 auto;
+        padding: 16px;
+        border-radius: 5px;
+        font-size: 16px;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+        border-width: 2px;
+        border-style: solid;
+        background-color: #e17055;
+        background-position: 100% 0;
+        background-size: 300%;
+        transition: all 2s;
+  }
+  .btn-one {
+    border-color:darksalmon;
+    color: #130f40;
+    background-image: linear-gradient(90deg, #c7ecee  50%, transparent 50%);    
+}
+  .btn:hover {
+    background-position: 0 100%;
+    color:#fad390;
+}
+
+  .container {
+    max-width: 70%;
+    margin: 30px auto;
+    border-radius: 5%;
+    background-color: #60a3bc;
+    padding: 10px;
+    overflow: visible;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  
+  .nav {
+    text-align: center;
+    margin-top: 15px;
+  }
+  
+  a {
+    padding: 20px;
+    font-weight: bold;
+    font-size: 25px;
+    display: inline;
+    text-decoration: dashed;
+  }
+  
+  a:hover {
+    color:darksalmon;
+  }
+  
+  h1 {
+    color: #dff9fb;
+    text-align: center;
+  }
+  .wrapper {
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+}
+ .box2 {
+   min-height: 300px;
+   flex: 0 0 50%;
+   flex-wrap: wrap;
+   display: flex;
+   justify-content: center;
+   margin-bottom: 60px; 
+ }
+
+ .description {
+   width: 50%;
+   padding: 20px; 
+ }
+ 
+ .image {
+  border: 3px solid #ddd;
+  margin-top: 10px;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 50%;
+  height: auto;
+  position: relative; 
+ }
+ 
+ .image::after {
+   position: absolute;
+   content: '';
+   background-color: #63cdda;
+   opacity: 0.2;
+   width: 100%;
+   height: 100%;
+   left: 0;
+   top: 0;
+   transition: all 1s; 
+ }
+ 
+ .image:hover::after {
+   left: 11px;
+   top: 11px; 
+ }
+ 
+ img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+ }
+ 
+  .footer {
+    background:darksalmon;
+    color: #575fcf;
+    text-align: center;
+  }
+  /*# games */
+
+  .g1 {
+    display: inline-block;
+    margin  : 90%;
+  }
+  .grytext {
+    color: black;
+    font-size: 14px;
+    font-family: arial;
+    width: auto;
+    margin: auto;
+    text-align: center ;
+  }
+.col-1 {width: 8.334%}
+.col-2 {width: 16.667%}
+.col-3 {width: 25%}
+.col-4 {width: 33.334%}
+.col-5 {width: 41.667%}
+.col-6 {width: 50%}
+.col-7 {width: 58.334%}
+.col-8 {width: 66.667%}
+.col-9 {width: 75%}
+.col-10 {width: 83.334%}
+.col-11 {width: 91.667%}
+.col-12 {width: 100%}
+
+
+@media (max-width: 468px) {
+	.col {
+		float: none;
+		width: 100%;
+	}	
+}
+   /*# sourceMappingURL=style.css.map */
+   /* Hide the images by default */
+.mySlides {
+    display: none;
+  }
+  /* Slideshow container */
+  .slideshow-container {
+    position: relative;
+    max-width: 1515px;
+  }
+  img {
+    height:500px;
+    border: solid #ffbe76;
+    border-radius: 10px;
+  }
