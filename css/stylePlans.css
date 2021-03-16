@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body { background-color: #60a3bc; margin: auto; font-family: 'Akaya Kanadaka', cursive; }
 
 .container { max-width: 100%; margin: auto; background-color: #60a3bc; overflow: visible; display: flex; flex-direction: column; }
@@ -9,11 +10,43 @@ body { background-color: #60a3bc; margin: auto; font-family: 'Akaya Kanadaka', c
 .slideshow-container { position: relative; max-width: 100%; }
 
 img { height: 600px; }
+=======
+body {
+  background-color: #60a3bc;
+  margin: auto;
+  font-family: 'Akaya Kanadaka', cursive;
+}
+
+.container {
+  max-width: 100%;
+  margin: auto;
+  background-color: #60a3bc;
+  overflow: visible;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  height: 100%;
+}
+
+img {
+  height: 600px;
+}
+>>>>>>> 27fc39c1e7946aa035956b67b26328d095275987
 
 /* Caption text */
 .text { color: #f2f2f2; font-size: 15px; padding: 8px 12px; position: absolute; bottom: 8px; width: 100%; text-align: center; }
 
 /* The dots/bullets/indicators */
+<<<<<<< HEAD
 .dot { cursor: pointer; height: 15px; width: 15px; margin: 8px 3px; background-color: darksalmon; border-radius: 50%; display: inline-block; transition: background-color 0.6s ease; }
 
 .active, .dot:hover { background-color: #717171; }
@@ -51,3 +84,109 @@ a:hover { color: midnightblue; }
 
 /* Footer */
 .footer { background: darksalmon; color: #575fcf; text-align: center; }
+=======
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 8px 3px;
+  background-color: darksalmon;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: .4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Navigation */
+.nav {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.nav-container {
+  background-color: darksalmon;
+  padding: 10px;
+}
+
+a {
+  padding: 20px;
+  font-weight: bold;
+  font-size: 25px;
+  display: inline;
+  text-decoration: dashed;
+}
+
+a:hover {
+  color: midnightblue;
+}
+
+/* Gallery */
+.gallery-container {
+  margin: auto;
+  padding: 20px;
+}
+
+.row, .row1 {
+  display: flex;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 8px;
+  margin-top: 15px;
+}
+
+.content {
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.gallery {
+  margin: 0;
+  width: 440px;
+  height: 330px;
+}
+
+.gallery:hover {
+  border-color: #575fcf;
+}
+
+/* Footer */
+.footer {
+  background: darksalmon;
+  color: #575fcf;
+  text-align: center;
+}
+
+/*# sourceMappingURL=stylePlans.css.map */
+>>>>>>> 27fc39c1e7946aa035956b67b26328d095275987
