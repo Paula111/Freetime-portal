@@ -1,7 +1,7 @@
 body {
   background-color: #c7ecee;
   font-family: 'Akaya Kanadaka', cursive;
-  margin: 0;
+  margin: auto;
 }
 
 .btn {
@@ -38,10 +38,8 @@ body {
   margin: 0;
   background-color: #c7ecee;
   overflow: visible;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
+  flex-direction: column;
 }
 
 /* Hide the images by default */
@@ -62,10 +60,7 @@ body {
   font-size: 30px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  user-select: none;
 }
 
 /* Position the "next button" to the right */
@@ -124,6 +119,15 @@ img {
   animation-duration: 1.5s;
 }
 
+@-webkit-keyframes fade {
+  from {
+    opacity: .4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 @keyframes fade {
   from {
     opacity: .4;
@@ -162,24 +166,17 @@ h1 {
 }
 
 .wrapper {
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .box2 {
   min-height: 300px;
-  -ms-flex: 0 0 50%;
-      flex: 0 0 50%;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  display: -ms-flexbox;
+  flex: 0 0 50%;
+  flex-wrap: wrap;
   display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
+  justify-content: center;
   margin-bottom: 50px;
 }
 
@@ -217,8 +214,7 @@ h1 {
 .photo {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .footer {
@@ -295,4 +291,7 @@ h1 {
     width: 100%;
   }
 }
+
+/*# sourceMappingURL=style.css.map */
+
 /*# sourceMappingURL=style.css.map */
