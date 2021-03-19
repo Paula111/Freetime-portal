@@ -64,7 +64,7 @@ body {
 
 .nav {
   text-align: center;
-  margin-top: 15px;
+  margin: 0;
 }
 
 .nav-container {
@@ -78,10 +78,11 @@ a {
   font-size: 25px;
   display: inline;
   text-decoration: dashed;
+  color: midnightblue;
 }
 
 a:hover {
-  color: darksalmon;
+  color: #c7ecee;
 }
 
 h1 {
@@ -144,7 +145,7 @@ img {
 
 .footer {
   background: darksalmon;
-  color: #575fcf;
+  color: midnightblue;
   text-align: center;
 }
 

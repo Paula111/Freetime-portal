@@ -1,6 +1,6 @@
 
 body {
-  background-color: #60a3bc;
+  background-color: #c7ecee;
   margin: auto;
   font-family: 'Akaya Kanadaka', cursive;
 }
@@ -8,7 +8,7 @@ body {
 .container {
 max-width: 100%;
 margin: auto;
-background-color: #60a3bc;
+background-color: #c7ecee;
 overflow: visible;
 display:flex;
 flex-direction: column;
@@ -77,7 +77,7 @@ to {opacity: 1}
 
 .nav {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 0;
 }
 
 .nav-container{
@@ -91,10 +91,11 @@ a {
   font-size: 25px;
   display: inline;
   text-decoration: dashed;
+  color: midnightblue;
 }
 
 a:hover {
-  color:midnightblue;
+  color:#c7ecee;
 }
 
 /* Gallery */
@@ -131,6 +132,6 @@ a:hover {
 /* Footer */
 .footer {
   background: darksalmon;
-  color: #575fcf;
+  color: midnightblue;
   text-align: center;
 }
