@@ -20,7 +20,7 @@ body {
   font-size: 60px;
   word-spacing: 2px;
   font-weight: 700;
-<<<<<<< HEAD
+  color: whitesmoke;
 }
 
 .nav {
@@ -33,6 +33,15 @@ body {
   padding: 10px;
 }
 
+a {
+  padding: 20px;
+  font-weight: bold;
+  font-size: 25px;
+  display: inline;
+  text-decoration: dashed;
+  color: midnightblue;
+}
+
 /* Slideshow container */
 .slideshow-container {
   max-width: 1000px;
@@ -42,9 +51,6 @@ body {
 
 .mySlides {
   display: none;
-=======
-  color: whitesmoke;
->>>>>>> 5cf0868d5287ee73f56e4e613174ac38bd5b9dfc
 }
 
 .center {
@@ -76,7 +82,6 @@ body {
   color: midnightblue;
 }
 
-<<<<<<< HEAD
 a:hover {
   color: #c7ecee;
   font-size: 18px;
@@ -171,139 +176,100 @@ a:hover {
   max-width: 50%;
   height: auto;
   position: relative;
-=======
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
 }
 
-.mySlides {
-  display: none;
-}
-
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 90%;
-}
-
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
->>>>>>> 5cf0868d5287ee73f56e4e613174ac38bd5b9dfc
-}
-
-.prev, .next {
-  cursor: pointer;
+.image::after {
   position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-.prev:hover, .next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
+  content: '';
+  background-color: #63cdda;
+  opacity: 0.2;
   width: 100%;
-  text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
+  height: 100%;
+  left: 0;
   top: 0;
+  transition: all 1s;
 }
 
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 8px 3px;
-  background-color: darksalmon;
-  border-radius: 50%;
+.image:hover::after {
+  left: 11px;
+  top: 11px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.footer {
+  background: darksalmon;
+  color: midnightblue;
+  text-align: center;
+}
+
+/*# games */
+.g1 {
   display: inline-block;
-  transition: background-color 0.6s ease;
+  margin: 90%;
 }
 
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-@-webkit-keyframes fade {
-  from {
-    opacity: .4;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fade {
-  from {
-    opacity: .4;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-/* Gallery */
-.gallery-container {
+.grytext {
+  color: black;
+  font-size: 14px;
+  font-family: arial;
+  width: auto;
   margin: auto;
-  padding: 20px;
+  text-align: center;
 }
 
-.row, .row1 {
-  display: flex;
+.col-1 {
+  width: 8.334%;
 }
 
-.column {
-  flex: 33.33%;
-  padding: 8px;
-  margin-top: 15px;
+.col-2 {
+  width: 16.667%;
 }
 
-.content {
-  background-color: white;
-  padding: 15px;
-  border-radius: 10px;
+.col-3 {
+  width: 25%;
 }
 
-.gallery {
-  margin: 0;
-  width: 440px;
-  height: 330px;
+.col-4 {
+  width: 33.334%;
 }
 
-<<<<<<< HEAD
+.col-5 {
+  width: 41.667%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.334%;
+}
+
+.col-8 {
+  width: 66.667%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.334%;
+}
+
+.col-11 {
+  width: 91.667%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
 .gallery {
   margin: 0;
   width: 440px;
@@ -320,17 +286,5 @@ a:hover {
   color: #575fcf;
   text-align: center;
 }
-=======
-.gallery:hover {
-  border-color: #575fcf;
-}
-
-/* Footer */
-.footer {
-  background: darksalmon;
-  color: #575fcf;
-  text-align: center;
-}
->>>>>>> 5cf0868d5287ee73f56e4e613174ac38bd5b9dfc
 
 /*# sourceMappingURL=StyleGames.css.map */
