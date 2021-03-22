@@ -1,5 +1,5 @@
 body {
-  background-color: #60a3bc;
+  background-color: #c7ecee;
   font-family: 'Akaya Kanadaka', cursive;
   margin: auto;
 }
@@ -22,8 +22,6 @@ body {
   background-position: center;
   transition: flex .4s ease;
   position: relative;
-  border: 3px solid #ffbe76;
-  border-radius: 10px;
 }
 
 .section .overlay {
@@ -60,7 +58,7 @@ body {
 
 .nav {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 0;
 }
 
 .nav-container {
@@ -74,10 +72,11 @@ a {
   font-size: 25px;
   display: inline;
   text-decoration: dashed;
+  color: midnightblue;
 }
 
 a:hover {
-  color: midnightblue;
+  color: #c7ecee;
 }
 
 .container {
@@ -125,12 +124,12 @@ img {
   width: 80%;
   height: 80%;
   object-fit: cover;
-  border: 3px solid darksalmon;
+  border: 3px solid midnightblue;
 }
 
 .footer {
   background: darksalmon;
-  color: #575fcf;
+  color: midnightblue;
   text-align: center;
 }
 

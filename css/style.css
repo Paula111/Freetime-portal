@@ -1,5 +1,5 @@
 body {
-  background-color: #60a3bc;
+  background-color: #c7ecee;
   font-family: 'Akaya Kanadaka', cursive;
   margin: auto;
 }
@@ -35,8 +35,8 @@ body {
 
 .container {
   max-width: 100%;
-  margin: auto;
-  background-color: #60a3bc;
+  margin: 0;
+  background-color: #c7ecee;
   overflow: visible;
   display: -ms-flexbox;
   display: flex;
@@ -135,7 +135,7 @@ img {
 
 .nav {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 0;
 }
 
 .nav-container {
@@ -149,10 +149,11 @@ a {
   font-size: 25px;
   display: inline;
   text-decoration: dashed;
+  color: midnightblue;
 }
 
 a:hover {
-  color: darksalmon;
+  color: #c7ecee;
 }
 
 h1 {
@@ -188,7 +189,7 @@ h1 {
 }
 
 .image {
-  border: 3px solid #ddd;
+  border: 3px solid midnightblue;
   margin-top: 30px;
   border-radius: 10px;
   padding: 20px;
@@ -222,7 +223,7 @@ h1 {
 
 .footer {
   background: darksalmon;
-  color: #575fcf;
+  color: midnightblue;
   text-align: center;
 }
 

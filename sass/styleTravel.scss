@@ -1,0 +1,90 @@
+body {
+    background-color: #c7ecee;
+    font-family: 'Akaya Kanadaka', cursive;
+    margin: 0;
+  }
+
+  .container {
+    max-width: 100%;
+    margin: auto;
+    background-color: #c7ecee;
+    overflow: visible;
+    display:flex;
+    flex-direction: column;
+  }
+
+  .splash {
+    background: url("/image/pexels-simon-migaj-891252.jpg") 0/cover no-repeat;
+    min-height: 500px;
+    display:flex;
+  }
+  .splash-inner{
+      margin: auto;
+      max-width: 70%;
+  }
+  .nav {
+    text-align: center;
+    margin-top: 0;
+  }
+  
+  .nav-container{
+    background-color: darksalmon;
+    padding:10px;
+  }
+  
+  
+  a {
+    padding: 20px;
+    font-weight: bold;
+    font-size: 25px;
+    display: inline;
+    text-decoration: dashed;
+    color: midnightblue;
+  }
+  
+  a:hover {
+    color: #c7ecee;
+  }
+
+  /* Gallery */
+.gallery-container{
+  margin:auto;
+  padding:20px;
+}
+.row, .row1 {
+  display: flex;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 8px;
+  margin-top:15px
+  
+}
+.content {
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.gallery {
+  margin-left: 50px;
+  width: 600px;
+  height: 330px;
+  border: 5px solid;
+  border-color: midnightblue;
+}
+
+.gallery:hover {
+  border-color:#c7ecee;
+}
+
+h3{
+  text-align: center;
+}
+
+  .footer {
+    background:darksalmon;
+    color: midnightblue;
+    text-align: center;
+  }
