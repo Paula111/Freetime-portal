@@ -1,5 +1,5 @@
 body {
-  background-color: #c7ecee;
+  background-color: #60a3bc;
   font-family: 'Akaya Kanadaka', cursive;
   margin: auto;
 }
@@ -56,27 +56,117 @@ body {
   background-image: url(https://images.pexels.com/photos/5082567/pexels-photo-5082567.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
 }
 
-.nav {
-  text-align: center;
-  margin-top: 0;
+/* Navigation */
+nav {
+  position: static;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  background-color: #0a3d62;
 }
 
-.nav-container {
-  background-color: darksalmon;
-  padding: 10px;
+.logo {
+  color: darksalmon;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  font-size: 21px;
+  font-family: 'Fascinate', cursive;
 }
 
-a {
-  padding: 20px;
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 65%;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links a {
+  color: #dff9fb;
+  text-decoration: none;
+  letter-spacing: 5px;
   font-weight: bold;
-  font-size: 25px;
-  display: inline;
-  text-decoration: dashed;
-  color: midnightblue;
+  font-size: 18px;
 }
 
 a:hover {
-  color: #c7ecee;
+  color: #60a3bc;
+}
+
+.burger {
+  display: none;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 1024px) {
+  .nav-links {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+  .nav-links {
+    position: fixed;
+    right: 0px;
+    height: 92vh;
+    top: 8vh;
+    background-color: #0a3d62;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    transform: translateX(100%);
+    transition: transform 0.5 ease-in;
+  }
+  .nav-links li {
+    opacity: 0;
+  }
+  .burger {
+    display: block;
+    cursor: pointer;
+  }
+}
+
+.nav-active {
+  transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+  opacity: 0;
+}
+
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
 }
 
 .container {
@@ -129,7 +219,7 @@ img {
 
 .footer {
   background: darksalmon;
-  color: midnightblue;
+  color: #60a3bc;
   text-align: center;
 }
 
