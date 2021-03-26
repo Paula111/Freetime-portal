@@ -42,6 +42,7 @@ body {
   display: flex;
 }
 
+/* Slideshow */
 /* Hide the images by default */
 .mySlides {
   display: -ms-flexbox;
@@ -128,6 +129,7 @@ nav {
   letter-spacing: 10px;
   font-size: 21px;
   font-family: 'Fascinate', cursive;
+  margin-left: 10px;
 }
 
 .nav-links {
@@ -135,7 +137,7 @@ nav {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  width: 65%;
+  width: 70%;
 }
 
 .nav-links li {

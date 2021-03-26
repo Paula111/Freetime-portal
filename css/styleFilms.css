@@ -74,6 +74,7 @@ nav {
   letter-spacing: 10px;
   font-size: 21px;
   font-family: 'Fascinate', cursive;
+  margin-left: 10px;
 }
 
 .nav-links {
@@ -219,7 +220,7 @@ img {
 
 .footer {
   background: darksalmon;
-  color: #60a3bc;
+  color: #0a3d62;
   text-align: center;
 }
 
