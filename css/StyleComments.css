@@ -1,0 +1,77 @@
+body {
+  background-color: #c7ecee;
+  font-family: 'Akaya Kanadaka', cursive;
+  margin: 0;
+}
+
+.nav {
+  text-align: center;
+  margin: 0;
+}
+
+.nav-container {
+  background-color: darksalmon;
+  padding: 10px;
+}
+
+.container {
+  max-width: 1140px;
+  padding: 0 20px 0 20px;
+}
+
+.section {
+  padding: 96px 0;
+}
+
+.contact {
+  display: flex;
+  align-items: flex-start;
+  background-color: #0097e6;
+  color: white;
+}
+
+.contact form {
+  flex: 2 0 0;
+}
+
+.contact .info {
+  flex: 1 0 0;
+  margin: 60px;
+}
+
+.contact .container {
+  display: flex;
+}
+
+.info span {
+  color: gold;
+  font-weight: 800;
+}
+
+input {
+  background: lightblue;
+  display: block;
+}
+
+.social-media {
+  display: flex;
+  justify-content: space-around;
+  margin: 48px 30% 48px 30%;
+}
+
+li {
+  font-size: 0;
+}
+
+li i {
+  font-size: 20px;
+}
+
+/*Media*/
+@media (max-width: 767px) {
+  .parent {
+    flex-direction: column;
+  }
+}
+
+/*# sourceMappingURL=StyleComments.css.map */
