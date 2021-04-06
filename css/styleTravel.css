@@ -1,6 +1,6 @@
 body {
   background-color: #60a3bc;
-  font-family: 'Akaya Kanadaka', cursive;
+  font-family: 'Roboto', sans-serif;
   margin: 0;
 }
 
@@ -42,7 +42,7 @@ nav {
   letter-spacing: 10px;
   font-size: 21px;
   font-family: 'Fascinate', cursive;
-  margin-left: 10px;
+  text-decoration: underline;
 }
 
 .nav-links {
@@ -113,6 +113,7 @@ a:hover {
 
 .nav-active {
   transform: translateX(0%);
+  position: static;
 }
 
 @keyframes navLinkFade {
@@ -140,7 +141,7 @@ a:hover {
 
 /* Gallery */
 .gallery-container {
-  margin: 30px;
+  margin: 80px;
 }
 
 .row {
@@ -155,7 +156,7 @@ a:hover {
   position: relative;
   flex: 1;
   max-width: 460px;
-  height: 300px;
+  height: 450px;
   margin: 20px;
   overflow: hidden;
   border-radius: 5px;

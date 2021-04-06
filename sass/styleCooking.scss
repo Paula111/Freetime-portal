@@ -1,26 +1,12 @@
 body {
-    background-color: #c7ecee;
+    background-color: #60a3bc;
     font-family: 'Roboto', sans-serif;
-    margin: 0;
-  }
-  .splash {
-    background: url("/image/Games-main.jpg") 0/cover no-repeat;
-    min-height: 500px;
-    display:flex;
-  }
-  .splash-inner{
-      margin: auto;
-      max-width: 70%;
-  }
-  .page-title{
-      margin: 0;
-      font-size: 60px;
-      word-spacing: 2px;
-      font-weight: 700;
-      color: whitesmoke;
+    margin: auto;
   }
 
-  nav {
+  /* Navigation */
+
+nav {
     position: static;
     top: 0;
     width: 100%;
@@ -62,7 +48,7 @@ body {
   a:hover {
     color: #60a3bc;
   }
-
+  
   .burger {
     display:none;
   }
@@ -137,85 +123,9 @@ body {
   .toggle .line3 {
     transform: rotate(45deg) translate(-5px, -6px);
   }
-  
-  
-  /* Slideshow container */
-  .slideshow-container {
-    max-width: 1000px;
-    position: relative;
-    margin: auto;
-  }
-  .mySlides {
-    display: none;
-  }
-  .center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 90%;
-  }
-  .fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
-  }
 
-  
-  /* Fading animation */
-  
-  
-  @-webkit-keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
+  .footer {
+    background: darksalmon;
+    color: #0a3d62;
+    text-align: center;
   }
-  
-  @keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-  }
-  /* Gallery */
-.gallery-container{
-  margin:auto;
-  padding:20px;
-}
-.row {
-  display: flex;
-}
-
-.column {
-  flex: 33.33%;
-  padding: 8px;
-  margin-top:15px
-  
-}
-.content {
-  background-color: white;
-  padding: 15px;
-  border-radius: 10px; 
-  height: auto;
-  position: relative; 
- }
- 
- img {
-   width: 100%;
-   height: 100%;
-   object-fit: fill;
- }
- 
-.gallery {
-  margin:0;
-  width: 440px;
-  height: 330px;
-}
-
-.gallery:hover {
-  border-color:#575fcf;
-}
-
-/* Footer */
-.footer {
-  background:darksalmon;
-  color: #575fcf;
-  text-align: center;
-}

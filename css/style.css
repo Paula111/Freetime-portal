@@ -1,6 +1,6 @@
 body {
   background-color: #60a3bc;
-  font-family: 'Akaya Kanadaka', cursive;
+  font-family: 'Roboto', sans-serif;
   margin: auto;
 }
 
@@ -130,6 +130,7 @@ nav {
   font-size: 21px;
   font-family: 'Fascinate', cursive;
   margin-left: 10px;
+  text-decoration: underline;
 }
 
 .nav-links {
@@ -148,7 +149,7 @@ nav {
   color: #dff9fb;
   text-decoration: none;
   letter-spacing: 5px;
-  font-weight: bold;
+  font-weight: bolder;
   font-size: 18px;
 }
 
@@ -205,6 +206,7 @@ a:hover {
 
 .nav-active {
   transform: translateX(0%);
+  position: static;
 }
 
 @keyframes navLinkFade {

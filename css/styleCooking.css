@@ -1,69 +1,7 @@
 body {
   background-color: #60a3bc;
-  margin: auto;
   font-family: 'Roboto', sans-serif;
-}
-
-.container {
-  height: 500px;
   margin: auto;
-  background-color: #c7ecee;
-  overflow: hidden;
-  display: flex;
-}
-
-/* Hide the images by default */
-.mySlides {
-  display: none;
-  width: 100%;
-  height: 650px;
-}
-
-/* Slideshow container */
-.slideshow-container {
-  position: relative;
-  max-width: 100%;
-}
-
-img {
-  height: 650px;
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {
-    opacity: .4;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fade {
-  from {
-    opacity: .4;
-  }
-  to {
-    opacity: 1;
-  }
 }
 
 /* Navigation */
@@ -84,13 +22,14 @@ nav {
   letter-spacing: 10px;
   font-size: 21px;
   font-family: 'Fascinate', cursive;
+  margin-left: 10px;
   text-decoration: underline;
 }
 
 .nav-links {
   display: flex;
   justify-content: space-around;
-  width: 65%;
+  width: 70%;
 }
 
 .nav-links li {
@@ -101,7 +40,7 @@ nav {
   color: #dff9fb;
   text-decoration: none;
   letter-spacing: 5px;
-  font-weight: bold;
+  font-weight: bolder;
   font-size: 18px;
 }
 
@@ -181,64 +120,10 @@ a:hover {
   transform: rotate(45deg) translate(-5px, -6px);
 }
 
-/* Gallery */
-.flex-box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.card {
-  background: #0a3d62;
-  width: 400px;
-  margin-top: 60px;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
-  box-sizing: border-box;
-  padding: 20px;
-  color: #fff;
-}
-
-.heading {
-  text-align: center;
-  margin: 10px;
-  font-size: 25px;
-}
-
-.img {
-  height: 300px;
-  width: 100%;
-  border-radius: 5px;
-  background-size: cover;
-}
-
-.details {
-  text-align: center;
-  margin: 20px;
-}
-
-.more a {
-  padding: 10px;
-  width: 100%;
-  display: block;
-  text-align: center;
-  background-color: darksalmon;
-  box-sizing: border-box;
-  border-radius: 4px;
-  color: #0a3d62;
-  text-decoration: none;
-  font-size: 18px;
-}
-
-a:hover {
-  color: #60a3bc;
-}
-
-/* Footer */
 .footer {
   background: darksalmon;
   color: #0a3d62;
   text-align: center;
 }
 
-/*# sourceMappingURL=stylePlans.css.map */
+/*# sourceMappingURL=styleCooking.css.map */
