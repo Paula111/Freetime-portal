@@ -138,6 +138,8 @@ a:hover {
     width: 50%;
     transform: translateX(100%);
     transition: transform 0.5 ease-in;
+    bottom: 0px;
+    width: 100%;
   }
 
   .nav-links li {
@@ -178,55 +180,68 @@ a:hover {
   transform: rotate(45deg) translate(-5px, -6px);
 }
 
-/* Movies section */
+/* Movies/Series section */
 
-.container {
-  max-width: 100%;
+.flex-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card{
+  background: #0a3d62;
+  width: 400px;
+  margin: 40px 10px;
+  box-shadow: 0px 0px 20px rgba(0,0,0,0.05);
+  box-sizing: border-box;
+  padding: 20px;
+  color:#fff;
+  border-radius: 4px;
+}
+
+.heading {
+  text-align: center;
+  margin: 10px;
+  font-size: 25px;
+}
+
+.img{
+  height: 250px;
+  width: 100%;
+  border-radius: 5px;
+  background-size: cover;
+}
+
+.details {
+  text-align: center;
   margin: 20px;
-  background-color:inherit;
-}
-.wrapper {
-  display: flex;
-  padding: 20px;
 }
 
-.box1 {
-  min-height: 300px;
-  flex: 33.33%;
+.more a{
   padding: 10px;
-}
-
-.description {
-  width: 90%;
+  width: 100%;
+  display: block;
   text-align: center;
-  padding: 20px;
+  background-color: darksalmon;
+  box-sizing: border-box;
+  border-radius: 4px;
+  color: #0a3d62;
+  text-decoration: none;
+  font-size: 18px;
 }
 
-h2 {
-  font-size: 19px;
-  text-align: center;
+a:hover {
+  color: #60a3bc;
 }
 
-.image {
-  border: 3px solid #ddd;
-  margin: auto;
-  padding: 10px;
-  max-width: 50%;
-  height: auto;
-  position: relative;
-}
 
-img {
-  padding: 20px;
-  margin: auto;
-  display: flex;
-  width: 80%;
-  height: 80%;
-  object-fit: cover;
-}
+
 
 .footer {
   background: darksalmon;
   color: #0a3d62;
   text-align: center;
 }
+
+/* Responsive CSS */
