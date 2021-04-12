@@ -204,7 +204,7 @@ a:hover {
 .image .details p {
   margin: 30px 30px 0 30px;
   font-size: 15px;
-  text-align: center;
+  text-align: left;
   opacity: 0;
   transition: 0.6s;
   transition-property: opacity, transform;

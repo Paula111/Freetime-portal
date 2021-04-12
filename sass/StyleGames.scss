@@ -12,13 +12,13 @@ body {
       margin: auto;
       max-width: 70%;
   }
-  .page-title{
-      margin: 0;
-      font-size: 60px;
-      word-spacing: 2px;
-      font-weight: 700;
-      color: whitesmoke;
-  }
+  // .page-title{
+  //     margin: 0;
+  //     font-size: 90px;
+  //     word-spacing: 2px;
+  //     font-weight: 700;
+  //     color: whitesmoke;
+  // }
 
   nav {
     position: static;
@@ -175,47 +175,73 @@ body {
     to {opacity: 1}
   }
   /* Gallery */
-.gallery-container{
-  margin:auto;
-  padding:20px;
-}
-.row {
-  display: flex;
-}
 
-.column {
-  flex: 33.33%;
-  padding: 8px;
-  margin-top:15px
+  .read-more-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
   
-}
-.content {
-  background-color: white;
-  padding: 15px;
-  border-radius: 10px; 
-  height: auto;
-  position: relative; 
- }
- 
- img {
-   width: 100%;
-   height: 100%;
-   object-fit: fill;
- }
- 
-.gallery {
-  margin:0;
-  width: 440px;
-  height: 330px;
-}
+  .card{
+    background: #0a3d62;
+    width: 400px;
+    margin: 40px 10px;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.05);
+    box-sizing: border-box;
+    padding: 20px;
+    color:#fff;
+    border-radius: 4px;
+  }
+  
+  .heading {
+    text-align: center;
+    margin: 10px;
+    font-size: 25px;
+  }
+  
+  .img{
+    height: 250px;
+    width: 100%;
+    border-radius: 5px;
+    background-size: cover;
+  }
+  
+  .details {
+    text-align: left;
+    margin: 20px;
+   }
 
-.gallery:hover {
-  border-color:#575fcf;
-}
+   .read-more-text{
+     display:none;
+   }
+
+   .read-more-btn {
+    margin-left: 20px;
+    padding: 10px;
+    width: 50%;
+    display: block;
+    text-align: center;
+    background-color: darksalmon;
+    box-sizing: border-box;
+    border-radius: 4px;
+    color: #0a3d62;
+    text-decoration: none;
+    font-size: 18px;
+    cursor: pointer;
+   }
+
+   .read-more-btn:hover {
+    color: #60a3bc;
+  }
+
+    .read-more-text--show{
+     display: inline;
+   }
 
 /* Footer */
 .footer {
   background:darksalmon;
   color: #575fcf;
   text-align: center;
-}
+} 
