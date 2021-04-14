@@ -1,9 +1,45 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:400,600|Sacramento|Source+Sans+Pro:300&subset=latin-ext');
+
 body {
     background-color: #60a3bc;
     font-family: 'Roboto', sans-serif;
     margin: auto;
   }
-
+  .splash {
+    background: url("/image/kuchnia.jpg") 0/cover no-repeat;
+    min-height: 500px;
+    display:flex;
+  }
+  .splash-inner{
+      margin: auto;
+      max-width: 70%;
+  }
+  .page-title{
+      font-family: "Sacramento", cursive;
+      margin: 0;
+      font-size: 60px;
+      word-spacing: 2px;
+      font-weight: 700;
+      color: white;
+      text-shadow: black 0.1em 0.1em 0.2em;
+  }
+  .container {
+    max-width: 1140px;
+    margin: 0 auto;
+  }
+  
+  .section-title {
+    font-size: 22px;
+    text-transform: uppercase;
+    font-family: $font-header;
+    font-weight: 600;
+  
+    span {
+      text-transform: none;
+      font-weight: 400;
+      color: lighten($color-dark, 20%);
+    }
+  }
   /* Navigation */
 
 nav {
@@ -129,3 +165,162 @@ nav {
     color: #0a3d62;
     text-align: center;
   }
+  /* Layout */
+
+.wrapper {
+  display: flex;
+  margin-left: 10px;
+}
+
+.sidebar {
+  flex: 1 0 0;
+}
+
+.posts {
+  flex: 2 0 0;
+}
+
+.sidebar, .posts {
+  background: $color-light;
+  margin-right: 10px;
+  padding: 40px;
+  border: 1px solid $color-dark;
+  border-radius: 5px;
+}
+/* Lists */
+
+.list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  .active {
+    font-weight: bold;
+  }
+}
+
+.list-horizontal {
+  li {
+    display: inline-block;
+  }
+}
+
+/* Authors */
+
+.authors {
+  li {
+    margin-bottom: 12px;
+  }
+}
+
+/* Post */
+
+.post {
+  display: none;
+
+  &.active {
+    display: block;
+  }
+}
+
+.post-author {
+  font-style: italic;
+}
+
+.post-tags {
+  display: flex;
+  align-items: center;
+
+  a {
+    margin: 0 10px 0 0;
+    display: block;
+  }
+}
+.tag-size-1 {
+  font-size: 12px;
+}
+
+.tag-size-2 {
+  font-size: 15px;
+}
+
+.tag-size-3 {
+  font-size: 18px;
+}
+
+.tag-size-4 {
+  font-size: 22px;
+}
+
+.tag-size-5 {
+  font-size: 25px;
+}
+/* popup do poprawki ! ! !*/ 
+
+ /* Popup container */
+ .popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 50%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+} 
+.btn {
+  background-color: aqua;
+  width: 40px ;
+  height: 16px;
+}
+.container {
+  position: relative;
+}
+.center {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  text-align: center;
+  margin-top: 25%;
+}

@@ -38,14 +38,12 @@ body {
   margin: auto;
   background-color: #60a3bc;
   overflow: hidden;
-  display: -ms-flexbox;
   display: flex;
 }
 
 /* Slideshow */
 /* Hide the images by default */
 .mySlides {
-  display: -ms-flexbox;
   display: flex;
   width: 100%;
   height: 650px;
@@ -64,10 +62,7 @@ body {
   font-size: 30px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  user-select: none;
 }
 
 /* Position the "next button" to the right */
@@ -99,6 +94,15 @@ img {
   animation-duration: 1.5s;
 }
 
+@-webkit-keyframes fade {
+  from {
+    opacity: .4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 @keyframes fade {
   from {
     opacity: .4;
@@ -113,12 +117,9 @@ nav {
   position: static;
   top: 0;
   width: 100%;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -ms-flex-align: center;
-      align-items: center;
+  justify-content: space-around;
+  align-items: center;
   min-height: 8vh;
   background-color: #0a3d62;
 }
@@ -134,10 +135,8 @@ nav {
 }
 
 .nav-links {
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   width: 70%;
 }
 
@@ -185,12 +184,9 @@ a:hover {
     height: 92vh;
     top: 8vh;
     background-color: #0a3d62;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-direction: column;
-        flex-direction: column;
-    -ms-flex-align: center;
-        align-items: center;
+    flex-direction: column;
+    align-items: center;
     width: 50%;
     transform: translateX(100%);
     transition: transform 0.5 ease-in;
@@ -233,24 +229,17 @@ a:hover {
 }
 
 .wrapper {
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .box2 {
   min-height: 300px;
-  -ms-flex: 0 0 50%;
-      flex: 0 0 50%;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  display: -ms-flexbox;
+  flex: 0 0 50%;
+  flex-wrap: wrap;
   display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
+  justify-content: center;
   margin-bottom: 50px;
 }
 
@@ -346,4 +335,7 @@ a:hover {
     width: 100%;
   }
 }
+
+/*# sourceMappingURL=style.css.map */
+
 /*# sourceMappingURL=style.css.map */

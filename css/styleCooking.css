@@ -4,6 +4,27 @@ body {
   margin: auto;
 }
 
+.splash {
+  background: url("/image/kuchnia.jpg") 0/cover no-repeat;
+  min-height: 500px;
+  display: flex;
+}
+
+.splash-inner {
+  margin: auto;
+  max-width: 70%;
+}
+
+.page-title {
+  font-family: "Sacramento", cursive;
+  margin: 0;
+  font-size: 60px;
+  word-spacing: 2px;
+  font-weight: 700;
+  color: white;
+  text-shadow: black 0.1em 0.1em 0.2em;
+}
+
 /* Navigation */
 nav {
   position: static;
