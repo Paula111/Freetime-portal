@@ -31,13 +31,12 @@ body {
   .section-title {
     font-size: 22px;
     text-transform: uppercase;
-    font-family: $font-header;
     font-weight: 600;
   
     span {
       text-transform: none;
       font-weight: 400;
-      color: lighten($color-dark, 20%);
+      color: lighten;
     }
   }
   /* Navigation */
@@ -181,10 +180,9 @@ nav {
 }
 
 .sidebar, .posts {
-  background: $color-light;
   margin-right: 10px;
   padding: 40px;
-  border: 1px solid $color-dark;
+  border: 1px solid ;
   border-radius: 5px;
 }
 /* Lists */
@@ -323,4 +321,8 @@ nav {
   width: 100%;
   text-align: center;
   margin-top: 25%;
+}
+.img {
+  width: 250px;
+  height: 210px;
 }
