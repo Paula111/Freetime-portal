@@ -7,7 +7,7 @@ body {
 
 .splash {
   background: url("/image/kuchnia.jpg") 0/cover no-repeat;
-  min-height: 500px;
+  min-height: 650px;
   display: flex;
 }
 
@@ -168,7 +168,7 @@ a:hover {
 /* Layout */
 .wrapper {
   display: flex;
-  margin-left: 10px;
+  margin: 20px;
 }
 
 .sidebar {
@@ -182,8 +182,9 @@ a:hover {
 .sidebar, .posts {
   margin-right: 10px;
   padding: 40px;
-  border: 1px solid;
-  border-radius: 5px;
+  border: 3px solid #0a3d62;
+  border-radius: 8px;
+  background-color: #ebb4a2;
 }
 
 /* Lists */
@@ -225,7 +226,7 @@ a:hover {
 }
 
 .post-tags a {
-  margin: 0 10px 0 0;
+  margin: 0 10px 0 10px;
   display: block;
 }
 

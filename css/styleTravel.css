@@ -15,7 +15,7 @@ body {
 
 .splash {
   background: url("/image/pexels-simon-migaj-891252.jpg") 0/cover no-repeat;
-  min-height: 500px;
+  min-height: 650px;
   display: flex;
 }
 
