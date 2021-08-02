@@ -244,4 +244,17 @@ a:hover {
   text-align: center;
 }
 
+.center {
+  text-align: center;
+  font-family: cursive;
+  box-shadow: 0px 0px 10px grey;
+  border: 5px solid grey;
+}
+.center:hover {
+  transform: scale(2, 3);
+  border: none;
+  box-shadow: none;
+  color: grey;
+}
+
 /* Responsive CSS */
